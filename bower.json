@@ -1,0 +1,22 @@
+{
+  "name": "pttrn",
+  "description": "Just pattern pieces..",
+  "version": "1.0.0",
+  "main": [
+    "css",
+    "less"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "pattern"
+  ],
+  "authors": [
+    "Wahyu Kristianto <w.kristories@gmail.com>"
+  ],
+  "homepage": "https://github.com/Kristories/pttrn",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Kristories/pttrn.git"
+  }
+}
