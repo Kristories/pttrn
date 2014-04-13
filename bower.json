@@ -1,22 +1,21 @@
 {
-  "name": "pttrn",
-  "description": "Just pattern pieces..",
+  "name": "pttrn-gh-pages",
   "version": "1.0.0",
-  "main": [
-    "css",
-    "less"
+  "authors": [
+    "Wahyu Kristianto <w.kristories@gmail.com>"
   ],
-  "license": "MIT",
   "keywords": [
     "css",
     "pattern"
   ],
-  "authors": [
-    "Wahyu Kristianto <w.kristories@gmail.com>"
-  ],
+  "license": "MIT",
   "homepage": "https://github.com/Kristories/pttrn",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/Kristories/pttrn.git"
+  "dependencies": {
+    "bootstrap": "~3.1.1",
+    "less.js": "~1.7.0",
+    "lesshat": "~2.0.15",
+    "google-code-prettify": "~1.0.1",
+    "jquery.smooth-scroll": "~1.4.13",
+    "pttrn": "~1.0.0"
   }
 }

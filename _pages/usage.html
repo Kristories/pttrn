@@ -1,0 +1,78 @@
+<div id="page-usage" class="page">
+    <div class="heading">
+        <div class="container">
+            <h1>Usage</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Using LESS</h3>
+                <div class="row">
+                    <div class="col-md-12">
+<code>less</code>
+<pre class="prettyprint lang-css">
+.foo{
+    .pttrn-hexagon();
+}
+
+.bar{
+    .pttrn-hexagon(#ED5821);
+}
+</pre>
+
+<code>html</code>
+<pre class="prettyprint lang-html">
+&lt;div class=&quot;foo&quot;&gt;
+    pttrn
+&lt;/div&gt;
+
+&lt;div class=&quot;bar&quot;&gt;
+    pttrn with color
+&lt;/div&gt;
+</pre>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-6">
+                <h3>Using CSS</h3>
+                <div class="row">
+                    <div class="col-md-12">
+<code>html</code>
+<pre class="prettyprint lang-html">
+&lt;div class=&quot;pttrn-hexagon&quot;&gt;
+    pttrn
+&lt;/div&gt;
+</pre>
+                        <div class="well">
+                            <h4>Color</h4>
+                            <p>
+                                Default color is <code>#333333</code>, but you can change <code>.pttrn</code> color from here.
+                            </p>
+                            <div class="input-group">
+                                <input type="text" id="custom-color" class="form-control" placeholder="#333333">
+                                <span class="input-group-btn">
+                                    <button id="custom-download" class="btn btn-primary" type="button">Generate</button>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="generator-modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h3 class="center-block">pttrn.min.css</h3>
+                <pre id="generator-code"></pre>
+            </div>
+        </div>
+    </div>
+</div>

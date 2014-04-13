@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="assets/img/favicon/favicon.ico">
+
+    <title>pttrn - Just pattern pieces..</title>
+    <link href="assets/css/style.css" rel="stylesheet">
+    <style type="text/css" id="custom-pttrn"></style>
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <div id="page-hello">
+	<div class="center-outer">
+		<div class="center-inner">
+			<div class="container">
+				<h1>pttrn</h1>
+				<p>Just pattern pieces..</p>
+
+				<iframe src="http://ghbtns.com/github-btn.html?user=Kristories&repo=pttrn&type=watch&count=false&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="77" height="30"></iframe>
+
+				<iframe src="http://ghbtns.com/github-btn.html?user=Kristories&repo=pttrn&type=fork&count=false&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="77" height="30"></iframe>
+
+				<p><a class="btn btn-primary btn-lg" href="#page-installation">Learn more &raquo;</a></p>
+			</div>
+		</div>
+	</div>
+</div>
+    <div id="menu">
+    <div id="menu-fix">
+        <nav class="navbar" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#page-hello">pttrn</a>
+                </div>
+                <ul class="nav navbar-nav pull-right">
+                    <li><a href="#page-installation">Installation</a></li>
+                    <li><a href="#page-usage">Usage</a></li>
+                    <li><a href="#page-patterns">Patterns</a></li>
+                    <li><a href="#page-contribution">Contribution</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="page-installation" class="page">
+	<div class="heading">
+		<div class="container">
+			<h1>Installation</h1>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<h3>Bower</h3>
+				<p>Make sure you have bower installed or install it via <a href="https://npmjs.org">npm</a> <code>install -g bower</code>.</p>
+<code>console</code>
+<pre class="prettyprint lang-cli">
+bower install pttrn --save
+</pre>
+
+<code>less</code>
+<pre class="prettyprint lang-cli">
+@import "bower_components/pttrn/less/pttrn";
+</pre>
+			</div>
+			<div class="col-md-6">
+				<h3>Old School</h3>
+				<p>Download <strong><a href="https://raw.githubusercontent.com/Kristories/pttrn/master/css/pttrn.css">pttrn.css</a></strong> or <strong><a href="https://raw.githubusercontent.com/Kristories/pttrn/master/css/pttrn.min.css">pttrn.min.css</a></strong>.</p>
+<code>html</code>
+<pre class="prettyprint lang-html">
+&lt;link rel=&quot;stylesheet&quot; href=&quot;path/to/pttrn.css&quot;&gt;
+</pre>
+			</div>
+		</div>
+	</div>
+</div>
+    <div id="page-usage" class="page">
+    <div class="heading">
+        <div class="container">
+            <h1>Usage</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Using LESS</h3>
+                <div class="row">
+                    <div class="col-md-12">
+<code>less</code>
+<pre class="prettyprint lang-css">
+.foo{
+    .pttrn-hexagon();
+}
+
+.bar{
+    .pttrn-hexagon(#ED5821);
+}
+</pre>
+
+<code>html</code>
+<pre class="prettyprint lang-html">
+&lt;div class=&quot;foo&quot;&gt;
+    pttrn
+&lt;/div&gt;
+
+&lt;div class=&quot;bar&quot;&gt;
+    pttrn with color
+&lt;/div&gt;
+</pre>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-6">
+                <h3>Using CSS</h3>
+                <div class="row">
+                    <div class="col-md-12">
+<code>html</code>
+<pre class="prettyprint lang-html">
+&lt;div class=&quot;pttrn-hexagon&quot;&gt;
+    pttrn
+&lt;/div&gt;
+</pre>
+                        <div class="well">
+                            <h4>Color</h4>
+                            <p>
+                                Default color is <code>#333333</code>, but you can change <code>.pttrn</code> color from here.
+                            </p>
+                            <div class="input-group">
+                                <input type="text" id="custom-color" class="form-control" placeholder="#333333">
+                                <span class="input-group-btn">
+                                    <button id="custom-download" class="btn btn-primary" type="button">Generate</button>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="generator-modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h3 class="center-block">pttrn.min.css</h3>
+                <pre id="generator-code"></pre>
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="page-patterns" class="page">
+	<div class="heading">
+		<div class="container">
+			<h1>Pattern</h1>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="demo pttrn-horizontal">
+					pttrn-horizontal
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="demo pttrn-vertical">
+					pttrn-vertical
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="demo pttrn-polkadot">
+					pttrn-polkadot
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="demo pttrn-hexagon">
+					pttrn-hexagon
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="demo pttrn-square">
+					pttrn-square
+				</div>
+			</div>
+
+			<div class="col-md-3">
+				<div class="demo pttrn-circle">
+					pttrn-circle
+				</div>
+			</div>
+
+			<div class="col-md-3">
+				<div class="demo pttrn-snake">
+					pttrn-snake
+				</div>
+			</div>
+
+			<div class="col-md-3">
+				<div class="demo pttrn-plus">
+					pttrn-plus
+				</div>
+			</div>
+
+			<div class="col-md-3">
+				<div class="demo pttrn-diamond">
+					pttrn-diamond
+				</div>
+			</div>
+
+			<div class="col-md-3">
+				<div class="demo pttrn-diamondero">
+					pttrn-diamondero
+				</div>
+			</div>
+
+			<div class="col-md-3">
+				<div class="demo pttrn-sarung">
+					pttrn-sarung
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+    <div id="page-contribution" class="page">
+    <div class="heading">
+        <div class="container">
+            <h1>Contribution</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div id="pttrn-generator" class="pttrn-plus">
+                    <div class="well">
+                        <h4>pttrn Generator</h4>
+                        <p>
+                            For example, you can download <strong><a href="assets/img/example/example.png">example.png</a></strong>
+                        </p>
+                        <form class="form" action="#">
+                            <div class="form-group">
+                                <input type="file" class="form-control" id="upload">
+                            </div>
+                            <button id="generate-button" type="button" class="btn btn-primary">Generate</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="generate-modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">pttrn Generator</h4>
+            </div>
+            <div class="modal-body">
+                <input type="text" class="form-control" id="pttrn-name" name="pttrn-name" placeholder="pttrn name" value="">
+                <hr>
+                <pre id="output"></pre>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="footer">
+	<div class="container">
+		<p>
+			Designed and built by <a href="http://twitter.com/kristories">@kristories</a>. Cover by <a href="http://www.flickr.com/photos/epsos/">epsos.de</a><br>
+			Code licensed under <a href="https://github.com/Kristories/pttrn/blob/master/LICENSE.md">MIT License</a>.
+		</p>
+	</div>
+</div>
+
+    <script type="text/javascript" src="assets/js/script.js"></script>
+
+</body>
+</html>

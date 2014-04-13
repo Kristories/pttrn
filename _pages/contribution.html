@@ -1,0 +1,46 @@
+<div id="page-contribution" class="page">
+    <div class="heading">
+        <div class="container">
+            <h1>Contribution</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div id="pttrn-generator" class="pttrn-plus">
+                    <div class="well">
+                        <h4>pttrn Generator</h4>
+                        <p>
+                            For example, you can download <strong><a href="assets/img/example/example.png">example.png</a></strong>
+                        </p>
+                        <form class="form" action="#">
+                            <div class="form-group">
+                                <input type="file" class="form-control" id="upload">
+                            </div>
+                            <button id="generate-button" type="button" class="btn btn-primary">Generate</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="generate-modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">pttrn Generator</h4>
+            </div>
+            <div class="modal-body">
+                <input type="text" class="form-control" id="pttrn-name" name="pttrn-name" placeholder="pttrn name" value="">
+                <hr>
+                <pre id="output"></pre>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
